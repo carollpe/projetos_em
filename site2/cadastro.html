@@ -1,138 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <html lang="pt-br">
+        <head>
+           <!-- Meta tags Obrigatórias -->
+             <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <!-- Bootstrap CSS -->
+             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Site Responsivo</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-      <a class="navbar-brand" href="#">
-      <img src="imagens/logo.png" width="40" height="40" alt="">
-      Docinhos da Carol
-    </a>
-  </a>
+        <title>Site Responsivo</title>
+        </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo.png" width="40" height="40" alt="">
+          Docinhos da Carol
+        </a>
+            </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+             <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index_teste.html">Página Inicial </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="produto.html">Produtos</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="cadastro.html">Cadastro </a>
-            </li>
-             </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button type="button" class="btn btn-dark">Pesquisar</button>
-          </form>
-        </div>
-      </nav>
-
- 
-
-<div class="container">
-<form>
-  <div class="form-group">
-  <div class="col-sm-12 col-md-6">
-     <p><i><b>  Cadastro:</p></i></b>
-      <label for="nome">Nome:</label>
-        <input type="text" class="form-control" id="nome">
-      </div>
-
-      <div class="col-sm-12 col-md-6">
-        <input class="form-check-input" type="checkbox" id="embalagem">
-        <label for="embalagem"><b>Embalado</b></label>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                         <a class="nav-link" href="index_teste.html">Página Inicial </a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="produto.html">Produtos</a>
+                    </li>
+                    <li class="nav-item active">
+                         <a class="nav-link" href="cadastro.html">Cadastro </a>
+                    </li>
+                </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button type="button" class="btn btn-dark">Pesquisar</button>
+                    </form>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <p><i><b>  Cadastro:</b></i></p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group"> 
+                            <label for="nome"><b>Nome:</b></label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="embalagem">
+                            <label for="embalagem"><b>Embalado</b></label>
+                        </div>
         
-      </div>
-      <div class= "col-sm-12 col-md-6">
-        <div class= "form-group">
-            <label for="categoria"><b>Categoria</b></label>
-            <select class= "form-control" id="categoria">
-                <option>Brigadeiro</option>
-                <option>Beijinho</option>
-                <option>Trufa</option>
-            </select>
+                        <div class="form-group">
+                            <label for="valor"><b>Valor:</b></label>
+                            <input type="number" min="0" max="50" class="form-control" id="valor">
+                        </div>
+                        <div class="form-group">
+                            <label for="quantidade"><b>Quantidade</b></label>
+                            <input type="number" min="0" class="form-control" id="quantidade">     
+                        </div>
+                    </div>
+            
+                    <div class= "col-sm-12 col-md-6">
+                        <div class= "form-group">
+                            <label for="categoria"><b>Categoria</b></label>
+                            <select class= "form-control" id="categoria">
+                                <option>Brigadeiro</option>
+                                <option>Beijinho</option>
+                                <option>Trufa</option>
+                            </select>
+                        </div>
+             
+                        <div class= "form-group">
+                            <label for="Sabor"><b>Sabor</b></label>
+                            <select class= "form-control" id="Sabor">
+                                <option>Chocolate</option>
+                                <option>Morango</option>
+                                <option>Nutella</option>
+                                <option>Maracujá</option>
+                                <option>Côco</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="story"><b>Ingredientes:</b></label>
+                            <textarea class="form-control" id="ingredientes" rows="3"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <button type="submit" class="btn btn-dark btn-block">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-  </div>
-  <div class= "form-group">
-<div class="col-sm-12 col-md-6">
-    
-        <label for="Sabor"><b>Sabor</b></label>
-        <select class= "form-control" id="Sabor">
-            <option>Chocolate</option>
-            <option>Morango</option>
-            <option>Nutella</option>
-            <option>Maracujá</option>
-            <option>Côco</option>
-        </select>
-    </div>
-</div>
-<div class="form-group"></div>
-<div class="col-sm-12 col-md-6">
-        
-          <label for="valor"><b>Valor:</b></label>
-            <input type="number" class="form-control" id="nunber">
-          </div>
- </div>
-  
-  <div  class="col-sm-12 col-md-6">
-    <div class="form-group"></div>
-      <label for="quantidade"><b>Quantidade</b></label>
-        <input type="number" class="form-control" id="nunber">     
-  </div>
-  <div class="col-sm-12 col-md-6">
-    <label for="story"><b>Ingredientes:</b></label>
-    <textarea id="story" name="story" rows="5" cols="33">
-    </textarea>
-    
-  </div>
-
-<p><b><i>Produtos: </p></b></i>
-
- 
-      <div class="container">
-      </div>
-      <div class="row" > 
-          <div class ="col-sm-12 col-md-4"> 
-          <img src="imagens/BEIJINHO_TESTE.jpg" width="150" height="150"> 
-          <img src="imagens/brigadeiro.jpg" width="150" height="150"> 
-          </div>
-          <div class="col-sm-12 col-md-4">
-          <img src="imagens/morango.jpg" width="150" height="150">
-          <img src="imagens/brigadeiro-de-leite-ninho.jpg" width="150" height="150">
-          </div>
-          <div class="col-sm-12 col-md-4"> 
-          <img src="imagens/brigadeiro_maracuja_gd.jpg " width="150" height="150">
-          <img src="imagens/coco.jpg " width="150" height="150">
-          </div>
-        </div>
-         
-        <div class="row">
-           <div class="col-sm-12 col-md-6">
-             <button type="reset" class="btn btn-dark btn-block">Cancelar</button>
-           </div>
-           <div class="col-sm-12 col-md-6">
-            <button type="submit" class="btn btn-danger btn-block">Salvar</button>
-           </div>
-          </div>
-          </div>
-        </form>
-
-      
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      </body>
+    </body>
 </html>
